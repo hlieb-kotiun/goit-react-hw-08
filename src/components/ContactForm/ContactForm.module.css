@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  width: 100%;
+  background-color: rgb(87, 87, 235);
+}
+
+.form {
+  display: flex;
+  gap: 16px;
+}
+
+.input {
+  display: block;
+  max-width: 220px;
+  height: 40px;
+  padding: 10px 18px;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.icon {
+  color: rgb(87, 87, 235);
+}

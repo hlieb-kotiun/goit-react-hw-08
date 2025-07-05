@@ -1,0 +1,26 @@
+.item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+  padding: 14px;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.5px;
+  width: 100%;
+  background-color: blue;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

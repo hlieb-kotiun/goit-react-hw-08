@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+}
+
+.input {
+  display: block;
+  width: 260px;
+  height: 32px;
+  padding: 8px 12px;
+  padding-left: 40px;
+  border: 1px solid rgb(87, 87, 235);
+  border-radius: 6px;
+  outline: none;
+}
+
+/* .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+} */
+
+.icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: rgb(87, 87, 235);
+}
