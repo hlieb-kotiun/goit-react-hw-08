@@ -2,9 +2,9 @@ import { Field, Form, Formik } from "formik";
 import s from "./ContactForm.module.css";
 import { IoPersonAddOutline, IoPersonAddSharp } from "react-icons/io5";
 import { useDispatch } from "react-redux";
-import { nanoid } from "@reduxjs/toolkit";
 import toast from "react-hot-toast";
-import { addContact } from "../../redux/contactsOps";
+import { addContact } from "../../redux/contacts/operations";
+// import { addContact } from "../../redux/contactsOps";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
