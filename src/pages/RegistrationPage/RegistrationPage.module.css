@@ -1,0 +1,45 @@
+.formWrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 26px 32px;
+  background-color: #fff;
+  border: 1px solid #5757de;
+  border-radius: 8px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.span {
+  display: block;
+}
+
+.input {
+  height: 32px;
+  outline: none;
+  border: 1px solid #5757de;
+  border-radius: 4px;
+}
+
+.btn {
+  border: none;
+  background-color: #5757de;
+  color: #fff;
+  border-radius: 6px;
+  margin: 0 auto;
+  padding: 8px 14px;
+  max-width: fit-content;
+}

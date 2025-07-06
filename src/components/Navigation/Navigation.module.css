@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  gap: 14px;
+}
+
+.link {
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: #5757eb;
+  text-decoration: underline;
+}

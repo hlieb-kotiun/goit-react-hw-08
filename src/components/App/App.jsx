@@ -6,23 +6,32 @@ import { useEffect } from "react";
 import { SyncLoader } from "react-spinners";
 import { selectLoading } from "../../redux/contacts/selectors";
 import { fetchContacts } from "../../redux/contacts/operations";
+import { Route, Routes } from "react-router-dom";
+import Layout from "../Layout/Layout";
+import HomePage from "../../pages/HomePage/HomePage";
+import RegistrationPage from "../../pages/RegistrationPage/RegistrationPage";
+import LoginPage from "../../pages/LoginPage/LoginPage";
+import ContactsPage from "../../pages/ContactsPage/ContactsPage";
+import NotFound from "../../pages/NotFound/NotFound";
+import { refreshThunk } from "../../redux/auth/operations";
 
 function App() {
   const dispatch = useDispatch();
-  const loading = useSelector(selectLoading);
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(refreshThunk);
   }, [dispatch]);
 
   return (
-    <div className="container">
-      <h1 className="mainTitle">Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
-      {loading && <SyncLoader color="rgb(87, 87, 235)" />}
-      <ContactList />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="register" element={<RegistrationPage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="contacts" element={<ContactsPage />} />
+      </Route>
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
